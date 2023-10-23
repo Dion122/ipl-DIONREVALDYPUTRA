@@ -1,10 +1,18 @@
-class Vegetable extends Product {
-@Override
-String getName() {
-return "Broccoli";
+package lsp;
+
+
+import java.sql.Date;
+
+
+class Vegetable extends FoodProduct { 
+    @Override
+String getName() { 
+    return "Broccoli";
 }
+
+
 @Override
-Date getExpiredDate() {
-return new Date();
+Date getExpiredDate() { 
+    return new Date(0);
 }
 }
